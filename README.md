@@ -1,2 +1,0 @@
-# Noma Algo
-Website

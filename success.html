@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanks for your order!</title>
+  <link rel="stylesheet" href="noma.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 20%, #a200ff22 0%, #12001b 100%);
+      color: #fff;
+      font-family: 'Orbitron', Arial, sans-serif;
+      letter-spacing: 0.03em;
+    }
+    .success-section {
+      background: rgba(40, 3, 56, 0.85);
+      border-radius: 18px;
+      box-shadow: 0 0 32px #ae69fa44, 0 0 3px #fff2;
+      padding: 48px 36px 36px 36px;
+      text-align: center;
+      max-width: 420px;
+      margin: auto;
+    }
+    .success-icon {
+      margin-bottom: 18px;
+    }
+    .success-section h3 {
+      color: #ea7bff;
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+      text-shadow: 0 0 12px #fff6, 0 0 2px #ae69fa99;
+    }
+    .success-section p {
+      color: #e5cfff;
+      font-size: 1.13rem;
+      margin-bottom: 22px;
+      text-shadow: 0 0 2px #fff2;
+    }
+    .btn-primary {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #d971ff;
+      padding: 12px 34px;
+      border-radius: 30px;
+      font-size: 1.13rem;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: .04em;
+      margin-top: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 14px #fff2;
+      transition: background .22s, color .22s, box-shadow .22s, border-color .22s;
+      text-shadow: 0 0 4px #d971ffcc;
+      outline: none;
+    }
+    .btn-primary:hover {
+      background: #fff;
+      color: #9300ff;
+      border-color: #e678ff;
+      box-shadow: 0 0 25px #fff7, 0 0 8px #d971ff;
+      text-shadow: 0 0 6px #fff;
+    }
+  </style>
+</head>
+<body>
+  <section class="success-section">
+    <div class="success-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#ea7bff"/><path d="M7 13.5L10.5 17L17 10.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h3>Subscription Successful!</h3>
+    <p>Thank you for subscribing to NOMA ALGO.<br>Your subscription is now active.<br><br><strong>Please wait 24–48 hours for TradingView access to be granted.</strong></p>
+    <form action="/create-portal-session" method="POST">
+      <input type="hidden" id="session-id" name="session_id" value="" />
+      <button id="checkout-and-portal-button" type="submit" class="btn-primary">Manage your billing information</button>
+    </form>
+    <p style="margin-top:24px; font-size:0.98rem; color:#b088f8;">Need help? <a href="about.html" style="color:#fff; text-decoration:underline;">Contact Support</a></p>
+  </section>
+</body>
+</html>

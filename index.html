@@ -6,14 +6,13 @@
   <title>NOMA ALGO | Precision Trading Tools</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="noma.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="background-glow"></div>
 
   <header class="header">
     <div class="container">
-      <h1 class="logo">NOMA ALGO</h1>
+      <h1 class="logo" onclick="window.location='index.html'">NOMA ALGO</h1>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -58,52 +57,42 @@
     </div>
   </section>
 
-  <!-- Visual Strategy Preview -->
-<section class="preview-section">
-  <h2 class="section-title">Strategy Previews</h2>
-
-  <p class="section-description">
-    NOMA ALGO strategies are engineered using high-probability setups drawn from Smart Money Concepts (SMC), ICT models, and quantitative volume behavior.
-    Through internal testing across 200+ trades, our core PO3-based framework has demonstrated a 73–89% win rate depending on session conditions and confidence stack alignment.
-  </p>
-
-  <p class="section-description">
-    We utilize a layered confirmation system — including high-timeframe FVG/OB zones, volume delta spikes, and displacement-based structure breaks — to filter out low-quality setups.
-    Statistically, this approach reduces false signals by over 60%, and combined with our adaptive risk model (fixed dollar loss + stepped take profit),
-    it allows for asymmetric R/R profiles like 1:1.5, 1:2, and even 1:3 on trending days.
-  </p>
-
-  <ul class="section-benefits">
-    <li>✔ 82.4% win rate across 150 trade sample</li>
-    <li>✔ Average reward-to-risk: 1.86</li>
-    <li>✔ Max daily drawdown under 1.8% using trailing kill logic</li>
-    <li>✔ Reduced overtrading via max-trade & kill-switch logic</li>
-    <li>✔ Adaptive to sideways, trending, and trap-based environments</li>
-  </ul>
-
-  <p class="section-description">
-    Whether you're trading liquidity sweeps, market maker buy models, or high-volume breakouts — NOMA ALGO adapts to the market's behavior and gives you the structure to trade with clarity, confidence, and consistency.
-  </p>
-
-  <div class="preview-grid">
-    <div>
-      <img src="chart_section_1.png" alt="PO3 Strategy Chart" class="preview-img" />
-      <p class="image-caption">PO3 Strategy: Accumulation → Manipulation → Distribution with HTF confirmation and FVG entry.</p>
+  <section class="preview-section">
+    <h2 class="section-title">Strategy Previews</h2>
+    <p class="section-description">
+      NOMA ALGO strategies are engineered using high-probability setups drawn from Smart Money Concepts (SMC), ICT models, and quantitative volume behavior.
+      Through internal testing across 200+ trades, our core PO3-based framework has demonstrated a 73–89% win rate depending on session conditions and confidence stack alignment.
+    </p>
+    <p class="section-description">
+      We utilize a layered confirmation system — including high-timeframe FVG/OB zones, volume delta spikes, and displacement-based structure breaks — to filter out low-quality setups.
+      Statistically, this approach reduces false signals by over 60%, and combined with our adaptive risk model (fixed dollar loss + stepped take profit),
+      it allows for asymmetric R/R profiles like 1:1.5, 1:2, and even 1:3 on trending days.
+    </p>
+    <ul class="section-benefits">
+      <li>✔ 82.4% win rate across 150 trade sample</li>
+      <li>✔ Average reward-to-risk: 1.86</li>
+      <li>✔ Max daily drawdown under 1.8% using trailing kill logic</li>
+      <li>✔ Reduced overtrading via max-trade & kill-switch logic</li>
+      <li>✔ Adaptive to sideways, trending, and trap-based environments</li>
+    </ul>
+    <p class="section-description">
+      Whether you're trading liquidity sweeps, market maker buy models, or high-volume breakouts — NOMA ALGO adapts to the market's behavior and gives you the structure to trade with clarity, confidence, and consistency.
+    </p>
+    <div class="preview-grid">
+      <div>
+        <img src="chart_section_1.png" alt="PO3 Strategy Chart" class="preview-img" />
+        <p class="image-caption">PO3 Strategy: Accumulation → Manipulation → Distribution with HTF confirmation and FVG entry.</p>
+      </div>
+      <div>
+        <img src="chart_section_2.png" alt="Volume Confirmation" class="preview-img" />
+        <p class="image-caption">Volume Confirmation: Delta + volume spike align with smart money breakout entries.</p>
+      </div>
+      <div>
+        <img src="chart_section_3.png" alt="Stacked TP Logic" class="preview-img" />
+        <p class="image-caption">Stacked TP Logic: Multi-step take profits with trailing stop and confidence filtering.</p>
+      </div>
     </div>
-    <div>
-      <img src="chart_section_2.png" alt="Volume Confirmation" class="preview-img" />
-      <p class="image-caption">Volume Confirmation: Delta + volume spike align with smart money breakout entries.</p>
-    </div>
-    <div>
-      <img src="chart_section_3.png" alt="Stacked TP Logic" class="preview-img" />
-      <p class="image-caption">Stacked TP Logic: Multi-step take profits with trailing stop and confidence filtering.</p>
-    </div>
-  </div>
-</section>
-
-
-
-
+  </section>
 
   <section class="pricing-section" id="pricing">
     <h3 class="section-title">Choose Your Plan</h3>
@@ -119,10 +108,8 @@
         <stripe-buy-button
           buy-button-id="buy_btn_1RsW4AEZVky6zyvA0Rrkptzl"
           publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+        ></stripe-buy-button>
       </div>
-
       <div class="pricing-card">
         <h4>Pro Monthly</h4>
         <p class="price">$100 / Month</p>
@@ -134,10 +121,8 @@
         <stripe-buy-button
           buy-button-id="buy_btn_1RsX0LEZVky6zyvA061zAjYG"
           publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+        ></stripe-buy-button>
       </div>
-
       <div class="pricing-card">
         <h4>Pro Quarterly</h4>
         <p class="price">$275 / 3 Months</p>
@@ -149,10 +134,8 @@
         <stripe-buy-button
           buy-button-id="buy_btn_1RsX1UEZVky6zyvAeiouauP2"
           publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+        ></stripe-buy-button>
       </div>
-
       <div class="pricing-card">
         <h4>Pro Yearly</h4>
         <p class="price">$1,100 / Year</p>
@@ -164,10 +147,8 @@
         <stripe-buy-button
           buy-button-id="buy_btn_1RsX2PEZVky6zyvAlA9SKQjL"
           publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+        ></stripe-buy-button>
       </div>
-
       <div class="pricing-card">
         <h4>Lifetime Access</h4>
         <p class="price">$2,500 One-Time</p>
@@ -179,17 +160,20 @@
         <stripe-buy-button
           buy-button-id="buy_btn_1RsX3XEZVky6zyvASB86sk5g"
           publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+        ></stripe-buy-button>
       </div>
+    </div>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 NOMA ALGO. All rights reserved.</p>
     <p class="fine-print">Disclaimer: This is not financial advice. Tools are educational and do not guarantee profits.</p>
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
   </footer>
 
+  <!-- Stripe Buy Button Script: include only once at end of body! -->
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </body>
 </html>
+
+
 

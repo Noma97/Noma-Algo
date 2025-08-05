@@ -8,9 +8,9 @@
 </head>
 <body>
   <header>
-    <h1>NOMA ALGO</h1>
+    <h1 class="logo" onclick="window.location='index.html'">NOMA ALGO</h1>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="features.html">Features</a></li>
         <li><a href="strategies.html">Strategies</a></li>
@@ -59,88 +59,82 @@
     </section>
 
     <section class="pricing-section" id="pricing">
-    <h3 class="section-title">Choose Your Plan</h3>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h4>Trial</h4>
-        <p class="price">$25 / 2 Weeks</p>
-        <ul>
-          <li>14 Day Full Access</li>
-          <li>All Features Included</li>
-          <li>One-Time Trial Only</li>
-        </ul>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1RsW4AEZVky6zyvA0Rrkptzl"
-          publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
+      <h3 class="section-title">Choose Your Plan</h3>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h4>Trial</h4>
+          <p class="price">$25 / 2 Weeks</p>
+          <ul>
+            <li>14 Day Full Access</li>
+            <li>All Features Included</li>
+            <li>One-Time Trial Only</li>
+          </ul>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1RsW4AEZVky6zyvA0Rrkptzl"
+            publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
+          ></stripe-buy-button>
+        </div>
+        <div class="pricing-card">
+          <h4>Pro Monthly</h4>
+          <p class="price">$100 / Month</p>
+          <ul>
+            <li>All Tools + Indicators</li>
+            <li>Priority Updates</li>
+            <li>Support Access</li>
+          </ul>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1RsX0LEZVky6zyvA061zAjYG"
+            publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
+          ></stripe-buy-button>
+        </div>
+        <div class="pricing-card">
+          <h4>Pro Quarterly</h4>
+          <p class="price">$275 / 3 Months</p>
+          <ul>
+            <li>All Tools + Indicators</li>
+            <li>Priority Updates</li>
+            <li>Support Access</li>
+          </ul>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1RsX1UEZVky6zyvAeiouauP2"
+            publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
+          ></stripe-buy-button>
+        </div>
+        <div class="pricing-card">
+          <h4>Pro Yearly</h4>
+          <p class="price">$1,100 / Year</p>
+          <ul>
+            <li>All Tools + Indicators</li>
+            <li>Priority Updates</li>
+            <li>Support Access</li>
+          </ul>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1RsX2PEZVky6zyvAlA9SKQjL"
+            publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
+          ></stripe-buy-button>
+        </div>
+        <div class="pricing-card">
+          <h4>Lifetime Access</h4>
+          <p class="price">$2,500 One-Time</p>
+          <ul>
+            <li>All Tools + Indicators</li>
+            <li>Lifetime Updates</li>
+            <li>Priority Support</li>
+          </ul>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1RsX3XEZVky6zyvASB86sk5g"
+            publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
+          ></stripe-buy-button>
+        </div>
       </div>
-
-      <div class="pricing-card">
-        <h4>Pro Monthly</h4>
-        <p class="price">$100 / Month</p>
-        <ul>
-          <li>All Tools + Indicators</li>
-          <li>Priority Updates</li>
-          <li>Support Access</li>
-        </ul>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1RsX0LEZVky6zyvA061zAjYG"
-          publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
-      </div>
-
-      <div class="pricing-card">
-        <h4>Pro Quarterly</h4>
-        <p class="price">$275 / 3 Months</p>
-        <ul>
-          <li>All Tools + Indicators</li>
-          <li>Priority Updates</li>
-          <li>Support Access</li>
-        </ul>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1RsX1UEZVky6zyvAeiouauP2"
-          publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
-      </div>
-
-      <div class="pricing-card">
-        <h4>Pro Yearly</h4>
-        <p class="price">$1,100 / Year</p>
-        <ul>
-          <li>All Tools + Indicators</li>
-          <li>Priority Updates</li>
-          <li>Support Access</li>
-        </ul>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1RsX2PEZVky6zyvAlA9SKQjL"
-          publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
-      </div>
-
-      <div class="pricing-card">
-        <h4>Lifetime Access</h4>
-        <p class="price">$2,500 One-Time</p>
-        <ul>
-          <li>All Tools + Indicators</li>
-          <li>Lifetime Updates</li>
-          <li>Priority Support</li>
-        </ul>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1RsX3XEZVky6zyvASB86sk5g"
-          publishable-key="pk_live_51Rij3lEZVky6zyvA2rOAnRfy9Kh6b01gkEJzhNT7RLfuP3dhFHPLaADxwbrcLn9kphEOqzCJktBiu4uXTYpIOZrZ004TNU7x8S"
-        >
-        </stripe-buy-button>
-      </div>
-  </section>
+    </section>
   </div>
 
   <footer>
     &copy; 2025 NOMA ALGO — Built by Traders, For Traders.
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
   </footer>
+
+  <!-- Stripe Buy Button Script (only ONCE!) -->
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </body>
 </html>
